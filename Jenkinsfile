@@ -20,8 +20,5 @@ node{
     stage("deploy"){
         sh 'ls -la'
         sh 'curl -upaz:APAYgvTTr7FmvQ1ejSQkdzKF9Fw -T chiper.txt "http://localhost:8081/artifactory/Test1/chiper.txt"'
-
-
-'
     }
 }
