@@ -9,7 +9,7 @@ properties(
 
 node{
     stage("get sources"){
-        sh "env "
+        // sh "env "
         git credentialsId: '98b78c62-fb2b-4f72-8241-3fb972a5b449', url: 'https://github.com/Pazfrid/Task1.git'
     }
     // archiveArtifacts artifacts: 'chiper.txt'
@@ -19,5 +19,9 @@ node{
     }
     stage("deploy"){
         sh 'ls -la'
+        sh 'curl -upaz:APAYgvTTr7FmvQ1ejSQkdzKF9Fw -T chiper.txt "http://localhost:8081/artifactory/Test1/chiper.txt"
+
+
+'
     }
 }
