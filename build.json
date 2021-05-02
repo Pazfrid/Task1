@@ -1,0 +1,9 @@
+{
+    "files": [
+      {
+        "pattern": "Test1/",
+        "target": "Test1",
+        "regexp": "true"
+      }
+    ]
+  }
